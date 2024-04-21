@@ -338,9 +338,8 @@ int main()
 		if (my_rank == 0) {
 			Mat frame_out(xsize, ysize, CV_8UC3, new_image->pixels);
 			resize(frame_out, frame_out, Size(640, 480));
-			//imshow("Active Edge Detection", frame_out);
-
-			//waitKey(1);
+			imshow("Active Edge Detection", frame_out);
+			waitKey(1);
 		}
 		
 	}
